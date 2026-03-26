@@ -116,10 +116,5 @@
         "key": "cmd+shift+enter",
         "command": "workbench.action.chat.submitWithCodebase",
         "when": "inChatInput && (chatInputHasText || chatInstructionsAttached)"
-    },
-    {
-        "key": "enter",
-        "command": "editor.action.insertLineAfter",
-        "when": "inChatInput && !suggestWidgetVisible"
     }
 ]
