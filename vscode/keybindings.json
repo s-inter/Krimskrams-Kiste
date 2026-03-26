@@ -99,12 +99,12 @@
     {
         "key": "enter",
         "command": "-workbench.action.chat.submit",
-        "when": "inChatInput && (chatInputHasText || chatInstructionsAttached)"
+        "when": "chatInputHasText && chatSessionOptionsValid && inChatInput && !chatSessionRequestInProgress && !withinEditSessionDiff"
     },
     {
         "key": "cmd+enter",
         "command": "-workbench.action.chat.submitWithCodebase",
-        "when": "inChatInput && (chatInputHasText || chatInstructionsAttached)"
+        "when": "chatInputHasText && inChatInput && !chatSessionRequestInProgress"
     },
     // Setup new bindings for GitHub Copilot chat
     {
